@@ -4,6 +4,11 @@
     box-sizing: border-box;
     font-family: sans-serif;
     /* overflow: hidden; */
+    scroll-behavior:smooth;
+}
+
+body{
+    overflow-x: hidden;
 }
 
 .section_1{
@@ -27,19 +32,29 @@
     height: 20px;
 }
 
+.navlinks{
+    position: absolute;
+    left:40%;
+}
+
 .navlinks a{
     text-decoration: none;
     padding: 4px;
     color: black;
     font-size: small;
     margin-left: -5px;
+    transition: .3s ease;
 }
 
 .navlinks a:hover{
     color: #a50b5e;
+    transition: .3s ease;
 }
 
 .button_1{
+    position: absolute;
+    right: 0;
+    margin-right: 32px;
     width: 120px;
     height: 1.7rem;
     background-color:#a50b5d8a;
@@ -48,11 +63,12 @@
     border: none;
     border-radius: 9px;
     cursor: pointer;
+    transition: .3s ease;
 }
 
 .button_1:hover{
     background-color: #a50b5e; 
-    transition: ease-in-out .7s; 
+    transition: .3s ease; 
 }
 
 #myModal{
@@ -189,8 +205,9 @@ h6{
 }
 
 .searchBtn{
-    margin-left: 370px;
-    margin-top: 27px;
+    position: absolute;
+    right: 32px;
+    top: 16px;
 }
 
 .Connect{
@@ -217,31 +234,47 @@ h6{
 #menu{
     position: fixed;
     top: 0;
+    left: 0;
     background-color: #a50b5de5;
-    width: 245px;
+    width: 250px;
     height: 100vh; 
     display: none;
     align-items: center;
-    transition: left 1s;
-
-}
-
-#closeMenu{
-    margin-top: -400px;
-    font-size: 25px;
-    color:white;
-    padding-left: -200px;
-    cursor: pointer;
-}
-
-.closeMenu:hover{
-    color: grey;
+    justify-content: center; 
+    -webkit-backdrop-filter: blur(10px);
+    backdrop-filter: blur(10px);
 }
 
 
-hr{
-     /* width: 300px; */
-     width: 100%;
+.closeSideNavigation{
+    top: 16px;
+    left: 16px;
+    width: 30px;
+    height: 30px;
+    background-color: #e86faf;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 3px;
+}
+
+.closeSideNav{
+   font-size: 32px;
+   color: grey;
+   transition: .3s ease-in-out;
+   cursor: pointer;
+}
+
+.closeSideNav:hover{
+    color: #dad8d8;
+}
+
+#sideLinks a{
+    transition: .3s ease-in-out;
+}
+#sideLinks a:hover{
+    color: #e86faf;
 }
 
 ul {
@@ -562,6 +595,11 @@ span{
         display: flex;
     }
 
+    .searchBtn{
+        right: 45px;
+        top: 25px;
+    }
+
     .section_1{
         display: none;
     }
@@ -579,10 +617,6 @@ span{
         margin-top: 27px;
     }
 
-    .searchBtn{
-        margin-left: 400px;
-    }
-
     .inspiration{
         font-size: 18px;
         margin-left: 200px;
@@ -598,6 +632,21 @@ span{
     
     .NFT_text{
         font-size: 12px;
+    }
+
+    .card{
+        height: 225px;
+        width: 165px;
+    }
+
+    .frame{
+        height: 160px;
+        padding: 6px;
+        margin-left: -2px;
+    }
+
+    .card_cont{
+        font-size: 7px;
     }
 
     .footer{

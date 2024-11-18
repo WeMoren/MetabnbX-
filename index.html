@@ -16,10 +16,10 @@
          
 
         <div class="navlinks">
-            <a href="">Home</a>
-            <a href="">Place To Stay</a>
-            <a href="">NFTs</a>
-            <a href="">Community</a>
+            <a href="#Home">Home</a>
+            <a href="#Places">Place To Stay</a>
+            <a href="#NFTs">NFTs</a>
+            <a href="#Community">Community</a>
         </div>
 
         <button class="button_1" id="openModal">Connect Wallet</button>
@@ -61,15 +61,17 @@
         </div>
 
     
-    <div id="menu">
+    <div class="sideMenu" id="menu">
       
-        <span id="closeMenu">&times;</span>
+        <div class="closeSideNavigation">
+          <span class="closeSideNav" id="closeMenu">&times;</span>
+        </div>
         <ul class="items">
         
-           <li class="nav_item"><a class="navlist"  href="#Home">Home</a></li><hr>
-           <li class="nav_item"><a class="navlist" href="#Places">Places To Stay</a></li><hr>
-           <li class="nav_item"><a class="navlist" href="#NFTs">NFTs</a></li><hr>
-           <li class="nav_item"><a class="navlist" href="#Community">Community</a></li><hr>
+           <li id="sideLinks" class="nav_item"><a class="navlist"  href="#Home">Home</a></li><hr>
+           <li  id="sideLinks" class="nav_item"><a class="navlist" href="#Places">Places To Stay</a></li><hr>
+           <li id="sideLinks" class="nav_item"><a class="navlist" href="#NFTs">NFTs</a></li><hr>
+           <li id="sideLinks" class="nav_item"><a class="navlist" href="#Community">Community</a></li><hr>
         </ul>
     </div>
    </section>
@@ -247,7 +249,7 @@
    </section>
 
 
-   <section class="NFTs">
+   <section class="NFTs" id="NFTs">
     <div class="LHS">
         <h2>Metabnb NFTs</h2>
         <p class="NFT_text">Discover our NFT gift card collection. Loyal <br>
@@ -264,13 +266,13 @@ loads of our exclusive services.</p>
    </section>
 
 
-   <section class="footer">
+   <section class="footer" id="Community">
        <div class="left_div">
         <img id="footer_logo" src="./logo-white.png" alt="">
         <div class="section_icons">
-            <i id="socials" class="fa fa-facebook"></i>
-            <i id="socials" class="fa fa-instagram"></i>
-            <i id="socials" class="fa fa-twitter"></i>
+            <a href="https://www.facebook.com/uwem.umoren.779/"><i id="socials" class="fa fa-facebook"></i></a>
+            <a href="https://www.instagram.com/moren_we"><i id="socials" class="fa fa-instagram"></i></a>
+            <a href="https://www.twitter.com/WeMoren"></a><i id="socials" class="fa fa-twitter"></i></a>
         </div>
         <span id="copy">&copy; Metabnb 2022</span>
     </div>
