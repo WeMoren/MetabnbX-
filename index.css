@@ -760,8 +760,17 @@ span{
 
 @media (min-width:320px){
     .searchBtn{
-        margin-left: 100px;
+        position: absolute;
+        left: 38;
     }
+
+    .Connect{
+        width:100px;
+    }
+.search{
+    width:px;
+}
+
 
     .inspiration{
         font-size: 18px;
@@ -792,6 +801,7 @@ span{
         position: relative;
         margin-bottom: 60px;
         display:grid ;
+        margin-left: 18px;
       }
 
     #no_1{
