@@ -610,8 +610,8 @@ span{
     }
 
     .searchBtn{
-        right: 45px;
-        top: 25px;
+        right: 20px;
+        top: 20px;
     }
 
     .section_1{
@@ -700,7 +700,7 @@ span{
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        margin-left: 70px;
+        margin-left: 43px;
     }
 
     .left_section{
